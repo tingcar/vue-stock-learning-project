@@ -12,7 +12,8 @@ import store from './store/store';
 Vue.use(VueRouter);
 Vue.use(VueResource);
 
-Vue.http.options.root = 'https://tingcar-stock-sample.firebaseio.com/';
+// Need to update your firebase url here
+Vue.http.options.root = 'YOUR_FIREBASE_URL';
 
 Vue.filter('currency', (value) => {
     return '$' + value.toLocaleString();
